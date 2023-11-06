@@ -8,9 +8,8 @@ print(line)
 
 allNumbers = list(range(1, 101))
 
-
-
 number = [int(i) for i in line]
+
 
 def findNumber(number):
     for num in number:
@@ -20,6 +19,7 @@ def findNumber(number):
             print(f"{num} is NOT between 1-100")
         # elif num != range(1, 100 + 1):
         #     print(f"{num} is not between 1-100")
+
 
 def missingNumbers(allNumbers, number):
     missingNumbers = list(set(allNumbers) - set(number))
@@ -57,22 +57,3 @@ with open("Unit3_Lab4-1/one_hundred_sorted.txt", "w") as file:
   
     for num in number:
         file.write(str(num) + ", ")
-
-
-
-        
-
-
-
-# numbers = []
-
-# for line in data:
-#     num = line.strip("\n").split(",")
-#     numbers.append(num)
-
-# print(num)
-# print(numbers)
-
-
-
-
